@@ -11,8 +11,8 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-    <script src="https://cdn.tailwindcss.com"></script>
     <title>Todo app</title>
+    <script src="https://cdn.tailwindcss.com"></script>
   </head>
   <body class="p-5 bg-blue-200 flex justify-center items-center h-screen">
     <div class="w-full max-w-xl">
@@ -25,10 +25,10 @@
           class="w-full p-4 outline-none"
           placeholder="Type Title ..."
         />
-        <button title="Add Todo">
+        <button onclick="handleAddBtn()" title="Add Todo">
           <i class="fa-solid fa-square-plus text-[30px] text-purple-400"></i>
         </button>
-        <button title="Clear All" class="mr-4">
+        <button onclick="removeBtn()" title="Clear All" class="mr-4">
           <i class="fa-solid fa-square-minus text-[30px] text-red-400"></i>
         </button>
       </div>
@@ -36,6 +36,10 @@
         <ul id="todo-list" class="grid divide-y"></ul>
       </div>
     </div>
-    <script src="script.js"></script>
+
+
+
+
+    <script src="./script.js"></script>
   </body>
 </html>
